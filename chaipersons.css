@@ -1,0 +1,289 @@
+.chairHeading{
+  font-family: "Solway", serif;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.staffHeading{
+  font-family: "Solway", serif;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.overallHeading{
+  font-family: "Solway", serif;
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.studentCoordinators{
+  font-family: "Solway", serif;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.webDevelopers{
+  font-family: "Solway", serif;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.mediaHeading{
+  font-family: "Solway", serif;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.chairpersons{
+  font-family: "Solway", serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.staffcoordinator{
+  font-family: "Solway", serif;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.overallcoordinators{
+  font-family: "Solway", serif;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.studentcoordinators{
+  font-family: "Solway", serif;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.studentcoordinators-2{
+  font-family: "Solway", serif;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.webdevelopers{
+  font-family: "Solway", serif;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mediateam{
+  font-family: "Solway", serif;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* .overallcoordinators .chair-card:nth-child(1), .webdevelopers .chair-card:nth-child(1), .mediateam .chair-card:nth-child(1)
+{
+  margin-left: 220px;
+}
+
+.overallcoordinators .chair-card:nth-child(2), .webdevelopers .chair-card:nth-child(2), .mediateam .chair-card:nth-child(2)
+{
+  margin-left: -130px;
+} */
+
+.chair-card {
+  width: 220px;
+  height: 220px;
+  background: #f5f5f5;
+  padding: 2rem 1.5rem;
+  transition: box-shadow .3s ease, transform .2s ease;
+}
+
+.chair-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+/*Image*/
+.chair-card-avatar, .chair-card-avatar img{
+  --size: 140px;
+  background: linear-gradient(to top, #f1e1c1 0%, #fcbc97 100%);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transition: transform .2s ease;
+  margin-bottom: 1rem;
+}
+
+/*Card footer*/
+.chair-card-social {
+    position: relative;
+    top: -60px;
+    left: -40px;
+  transform: translateY(100%);
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  opacity: 0;
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+.chair-card-social__item {
+  list-style: none;
+}
+
+.chair-card-social__item svg {
+  display: block;
+  height: 30px;
+  width: 30px;
+  fill: #515F65;
+  cursor: pointer;
+  transition: fill 0.2s ease ,transform 0.2s ease;
+}
+
+/*Text*/
+.chair-card-title {
+  text-align: center;
+  color: #333;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.chair-card-subtitle {
+  color: #445159;
+  font-size: 1em;
+}
+
+/*Hover*/
+.chair-card:hover {
+  box-shadow: 0 8px 50px #23232333;
+  border-radius: 20px;
+}
+
+.chair-card:hover .chair-card-info {
+  transform: translateY(-20%);
+}
+
+.chair-card:hover .chair-card-social {
+  transform: translateY(100%);
+  opacity: 1;
+}
+
+.chair-card-social__item svg:hover {
+  fill: #0077B5;
+  transform: scale(1.1);
+}
+
+.chair-card-avatar:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+  .chair-card-avatar img{
+    --size: 100px;
+    background: linear-gradient(to top, #f1e1c1 0%, #fcbc97 100%);
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    transition: transform .2s ease;
+    margin-bottom: 1rem;
+  }
+
+  .chairpersons{
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px;
+  }
+
+  .staffcoordinator{
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px;
+  }
+
+  .overallcoordinators{
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px;
+  }
+
+  .studentcoordinators-2{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .studentcoordinators{
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .webdevelopers{
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mediateam{
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chair-card {
+      height: 180px;
+      width: 180px;
+      margin-top: 30px;
+  }
+  
+  .chair-card-info {
+      padding: 10px;
+  }
+  
+  .chair-card-avatar {
+      margin-top: -20px;
+      width: 100px;
+      height: 100px;
+  }
+  
+  .chair-card-title {
+      font-size: 1em;
+  }
+  
+  .chair-card-subtitle {
+      font-size: 0.9em;
+  }
+  
+  .chair-card-social {
+      flex-direction: row;
+      align-items: center;
+  }
+  
+  .chair-card-social__item {
+      margin: 4px 0;
+  }
+}

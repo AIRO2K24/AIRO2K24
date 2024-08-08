@@ -1,0 +1,39 @@
+.register {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+    width: 150px;
+    margin-right: 5%;
+   
+    
+  }
+  
+  .register svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    height: 40px;
+  }
+  
+.register span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .register:hover svg {
+    transform: translateX(5px) rotate(90deg);
+  }
+  
+  .register:hover span {
+    transform: translateX(7px);
+  }
+  

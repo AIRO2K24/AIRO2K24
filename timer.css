@@ -1,0 +1,105 @@
+.countdown {
+  text-align: center;
+  padding: 50px 0;
+  background: #f7f7f7;
+}
+
+.countdown h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown-timer .time-box {
+  margin: 0 10px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Days
+{
+  position: relative;
+  left: 5px;
+}
+
+.time-box:nth-child(3) #minutes
+{
+  margin-left: 6px;
+}
+
+.time-box:nth-child(4) #seconds{
+  margin-left: 9px;
+}
+
+.countdown-timer .time-box span {
+  display: block;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.countdown-timer .time-box p {
+  font-size: 16px;
+  margin: 0;
+  color: #666;
+}
+
+h1 {  
+  margin-bottom: 60px;
+  text-align: center;
+  font: 300 2.25em 'Lato';
+  text-transform: uppercase;
+}
+
+h1 strong {
+  font-weight: 400;
+  color: #ea4c4c;
+}
+
+.card-1 h2 {
+  margin-bottom: 80px;  
+  text-align: center;  
+  font: 300 0.7em 'Lato'; 
+  text-transform: uppercase;  
+}
+
+h2 strong {    
+  font-weight: 400;   
+}
+
+@media (max-width: 480px) {
+  .countdown h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .countdown-timer {
+    margin-top: -80px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .countdown-timer .time-box {
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .countdown-timer .time-box span {
+    font-size: 32px;
+  }
+
+  .countdown-timer .time-box p {
+    font-size: 12px;
+  }
+  
+  .Days{
+    position: relative;
+    left: 0px;
+  }
+}
