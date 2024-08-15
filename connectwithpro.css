@@ -231,12 +231,12 @@ svg:hover {
     animation: fadeInDown 1.6s ease-out;
 }
 
-.right .contact a {
+.right .contact a, .right .contact-1 a {
     color: #1e90ff; 
     text-decoration: none;
 }
 
-.right .contact a:hover {
+.right .contact a:hover, .right .contact-1 a:hover {
     text-decoration: underline;
 }
 
