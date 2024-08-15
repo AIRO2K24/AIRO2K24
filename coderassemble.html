@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coders Assemble</title>
+    <link rel="icon" href="Ironman Logo.png">
+    <link rel="stylesheet" href="coderassemble.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Timmana&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay loop id="background-video" muted>
+        <source src="Coders Assemble.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Background Audio -->
+    <audio autoplay loop id="background-audio">
+        <source src="Coders Assemble.mp3" type="audio/mp3">
+        Your browser does not support HTML5 audio.
+    </audio>
+
+    <div class="container">
+        <div class="left">
+            <img src="CodersAssemble.png" alt="Event Image">
+        </div>
+        <div class="right">
+            <div class="heading-reg">
+                <h1>Coders Assemble</h1>
+                <button id="register-button" onclick="window.location.href='coderform.html'">Register Now</button>
+            </div>
+            <p id="description">
+                <h2>Where Quick Thinking meets Swift Coding! </h2><br>Coders Assemble is a team-based coding competition where each team consists of two members: a Coder and a Bidder. The Bidder estimates the time required to solve a given problem, and the Coder must solve the problem within the specified time.
+            </p>
+            <h2>Rules and Regulations</h2>
+            <h2>Round 1</h2>
+            <ol>
+                <li>Each team must consist of two members: one coder and one bidder.</li>
+                <li>A coding problem will be displayed to the bidder. The bidder will have a limited time to read and analyze the problem.</li>
+                <li>The bidder will propose a time constraint within which they believe the coder can solve the problem.</li>
+                <li>Once the time is locked, it cannot be changed.</li>
+                <li>The coder will be presented with the problem after the bidding phase.</li>
+                <li>The coder must solve the problem within the time constraint set by the bidder.</li>
+                <li>The coder will not know the time constraint beforehand.</li>
+                <li>If the coder fails to submit within the time, the team will score fewer points for that round.</li>
+                <li>Participants must use the coding environment provided by the organizers.</li>
+                <li>Use of external resources or collaboration with other teams is prohibited.</li>
+            </ol>
+        
+            <h2>Round 2</h2>
+            <p>The surprise event will be disclosed on that day.</p>
+            <p><strong>Venue:</strong> <span id="venue">Nvidia Lab - A block, First Floor</span></p>
+            <div>
+                <center>
+                    <h2>Event Co-ordinators</h2>
+                    <h2>Contact for Query</h2>
+                </center>
+            </div>
+            <div class="contact">
+                <div>
+                    <img src="Navin B.jpg" alt="" class="section">
+                    <h3>Navin B</h3>
+                    <a href="https://www.linkedin.com/in/navinb23" target="_blank">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
+                        </svg>
+                      </a>
+                
+                    <p><a href="tel:+91 8072489076">+91 8072489076</a></p>
+                </div>
+                <div>
+                    <img src="Chellappan R.JPG" alt="" class="section">
+                    <h3>Chellappan R</h3>
+                    <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAD9E43ABUa1grwVlwVeqrVnPPL-y7pFe1g4&keywords=chellappan%20ramachandran&origin=RICH_QUERY_TYPEAHEAD_HISTORY&position=0&searchId=eb616615-9b26-48fe-abe2-25f9a5fe2ca0&sid=a2p&spellCorrectionEnabled=true" target="_blank">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
+                        </svg>
+                      </a>
+                    <p><a href="tel:+91 8925022123">+91 8925022123</a></p>
+                </div>
+                <div>
+                    <img src="Aishwarya T.jpg" alt="" class="section">
+                    <h3>Aishwarya T</h3>
+                    <a href="https://www.linkedin.com/in/aishwarya-thiruchelvan-17147a257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_ap" target="_blank">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
+                        </svg>
+                      </a>
+                    <p><a href="tel:+91 9363668085">+91 9363668085</a></p>
+                </div>
+            </div>
+            <div class="contact-1">
+                <div>
+                    <img src=".jpg" alt="" class="section">
+                    <h3>Aravind</h3>
+                    <a href="" target="_blank">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
+                        </svg>
+                      </a>
+                
+                    <p><a href="tel:+91 8072489076">+91 8072489076</a></p>
+                </div>
+                <div>
+                    <img src=".JPG" alt="" class="section">
+                    <h3>Arun Nehru</h3>
+                    <a href="" target="_blank">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
+                        </svg>
+                      </a>
+                    <p><a href="tel:+91 8925022123">+91 8925022123</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

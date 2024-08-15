@@ -1,105 +1,82 @@
 .container-1 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-style: italic;
-  font-weight: bold;
+  color: white;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 5em;
+  padding: 2.5em;
 }
 
 .container-2{
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-style: italic;
-  font-weight: bold;
+  color: white;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 5em;
+  padding: 2.5em;
 }
 
-/* Card Styles */
-.card-1 {
-  width: 190px;
-  height: 254px;
-  background: #07182E;
-  position: relative;
+.container-3{
+  color: white;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  overflow: hidden;
-  border-radius: 20px;
-  padding: 20px;
+  padding: 2.5em;
 }
 
-.card-1 h2 {
-  z-index: 1;
-  color: white;
-  font-size: 2em;
+.card-1 {
+  text-align: left;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 300px;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px #000000;
 }
 
-.card-1:nth-child(2) h2{
-  z-index: 1;
-  margin-top: 30px;
-  color: white;
-  font-size: 1.5em;
+.card-1 .card-content a {
+  text-decoration: none;
 }
 
-.card-1::before {
-  content: '';
-  position: absolute;
-  top: -30px;
-  width: 120px;
-  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
-  height: 130%;
-  animation: card-1-rotBGimg 3s linear infinite;
-  transition: all 0.2s linear;
+.card-1 h2{
+  text-transform: uppercase;
+  font-family: "Timmana", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  z-index: 100;
 }
 
-@keyframes card-1-rotBGimg {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.card-1::after {
-  content: '';
-  position: absolute;
-  background: #07182E;
-  inset: 5px;
-  border-radius: 15px;
-}
-
-.card-1:hover::before {
-  animation-play-state: paused;
-}
-
-/* Button Styles */
-.card-1-btn {
-  z-index: 10;
+.card-1 .btn-1 {
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 13rem;
+  width: 10rem;
   overflow: hidden;
   height: 3rem;
   background-size: 300% 300%;
+  cursor: pointer;
   backdrop-filter: blur(1rem);
   border-radius: 5rem;
   transition: 0.5s;
-  animation: card-1-gradient_301 5s ease infinite;
+  animation: gradient_301 5s ease infinite;
   border: double 4px transparent;
-  background-image: linear-gradient(#212121, #212121), linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+  background-image: linear-gradient(#212121, #212121),
+    linear-gradient(
+      137.48deg,
+      #ffdb3b 10%,
+      #fe53bb 45%,
+      #8f51ea 67%,
+      #0044ff 87%
+    );
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
 
-.card-1-container-stars {
+.card-1 #container-stars {
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -110,96 +87,96 @@
   border-radius: 5rem;
 }
 
-.card-1-btn strong {
+.card-1 strong {
   z-index: 2;
-  font-family: "Architects Daughter", cursive;
-  font-size: 15px;
-  letter-spacing: 5px;
-  color: #FFFFFF;
-  /* text-shadow: 0 0 4px white; */
+  font-family: "Avalors Personal Use";
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-shadow: 0 0 4px white;
 }
 
-.card-1-glow {
+.card-1 #glow {
   position: absolute;
   display: flex;
   width: 12rem;
 }
 
-.card-1-circle {
+.card-1 .circle {
   width: 100%;
   height: 30px;
   filter: blur(2rem);
-  animation: card-1-pulse_3011 4s infinite;
+  animation: pulse_3011 4s infinite;
   z-index: -1;
 }
 
-.card-1-circle:nth-of-type(1) {
+.card-1 .circle:nth-of-type(1) {
   background: rgba(254, 83, 186, 0.636);
 }
 
-.card-1-circle:nth-of-type(2) {
+.card-1 .circle:nth-of-type(2) {
   background: rgba(142, 81, 234, 0.704);
 }
 
-.card-1-btn:hover .card-1-container-stars {
+.card-1 .btn-1:hover #container-stars {
   z-index: 1;
   background-color: #212121;
 }
 
-.card-1-btn:hover {
-  transform: scale(1.1)
+.card-1 .btn-1:hover {
+  transform: scale(1.1);
 }
 
-.card-1-btn:active {
-  border: double 4px #FE53BB;
+.card-1 .btn-1:active {
+  border: double 4px #fe53bb;
   background-origin: border-box;
   background-clip: content-box, border-box;
   animation: none;
 }
 
-.card-1-btn:active .card-1-circle {
-  background: #FE53BB;
+.card-1 .btn-1:active .circle {
+  background: #fe53bb;
 }
 
-.card-1-stars {
+.card-1 #stars {
   position: relative;
   background: transparent;
   width: 200rem;
   height: 200rem;
 }
 
-.card-1-stars::after {
+.card-1 #stars::after {
   content: "";
   position: absolute;
   top: -10rem;
   left: -100rem;
   width: 100%;
   height: 100%;
-  animation: card-1-animStarRotate 90s linear infinite;
+  animation: animStarRotate 90s linear infinite;
 }
 
-.card-1-stars::after {
+.card-1 #stars::after {
   background-image: radial-gradient(#ffffff 1px, transparent 1%);
   background-size: 50px 50px;
 }
 
-.card-1-stars::before {
+.card-1 #stars::before {
   content: "";
   position: absolute;
   top: 0;
   left: -50%;
   width: 170%;
   height: 500%;
-  animation: card-1-animStar 60s linear infinite;
+  animation: animStar 60s linear infinite;
 }
 
-.card-1-stars::before {
+.card-1 #stars::before {
   background-image: radial-gradient(#ffffff 1px, transparent 1%);
   background-size: 50px 50px;
   opacity: 0.5;
 }
 
-@keyframes card-1-animStar {
+@keyframes animStar {
   from {
     transform: translateY(0);
   }
@@ -209,7 +186,7 @@
   }
 }
 
-@keyframes card-1-animStarRotate {
+@keyframes animStarRotate {
   from {
     transform: rotate(360deg);
   }
@@ -219,7 +196,7 @@
   }
 }
 
-@keyframes card-1-gradient_301 {
+@keyframes gradient_301 {
   0% {
     background-position: 0% 50%;
   }
@@ -233,7 +210,7 @@
   }
 }
 
-@keyframes card-1-pulse_3011 {
+@keyframes pulse_3011 {
   0% {
     transform: scale(0.75);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
@@ -250,95 +227,101 @@
   }
 }
 
-@media (max-width: 480px) {
-  .container-1 {
-    row-gap: 4em;
-      margin-top: 16px;
-      margin-bottom: 16px;
-      margin: 0 70px;
-      padding: 1em;
-      display: flex;
-      flex-direction: column;
-  }
-
-  .container-2 {
-    row-gap: 4em;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    margin: 0 70px;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-}
-/* Card Styles */
-.card-1 {
-  width: 210px;
-  height: 230px;
-  background: #07182E;
+.card-1 h2, .card-1 .btn-1 {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-  border-radius: 20px;
-  padding: 20px;
-}
-
-.card-1 h2 {
-  z-index: 1;
-  color: white;
-  font-size: 2em;
+  z-index: 10; 
 }
 
 .card-1::before {
-  content: '';
+  content: "";
   position: absolute;
-  top: -90px;
-  width: 120px;
-  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
-  height: 200%;
-  animation: card-1-rotBGimg 3s linear infinite;
-  transition: all 0.2s linear;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('Coders Assemble.png');
+  background-size: cover;
+  /* z-index: -1;  */
+  background: rgba(0, 0, 0, 0.5);
 }
 
-@keyframes card-1-rotBGimg {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.container-1 .card-1:nth-child(1)
+{
+  backdrop-filter: blur();
+  background-image: url(Coders\ Assemble.png);
+  background-size: cover;
 }
 
-.card-1::after {
-  content: '';
-  position: absolute;
-  background: #07182E;
-  inset: 5px;
-  border-radius: 15px;
+.container-1 .card-1:nth-child(2)
+{
+  backdrop-filter: blur(10px);
+  background-image: url(Asgardian\ Auction\ House.jpg);
+  background-size: cover;
 }
 
-.card-1:hover::before {
-  animation-play-state: paused;
+.container-1 .card-1:nth-child(3)
+{
+  backdrop-filter: blur(10px);
+  background-image: url(SpiderTech\ Web.jpg);
+  background-size: cover;
 }
 
-  .card-1-btn {
-      width: 12rem;
-      height: 3rem;
-      font-size: 9px;
+.container-2 .card-1:nth-child(1)
+{
+  backdrop-filter: blur(10px);
+  background-image: url(Infinity\ Models.jpg);
+  background-size: cover;
+}
+
+.container-2 .card-1:nth-child(2)
+{
+  backdrop-filter: blur(10px);
+  background-image: url(Multiverse\ Of\ Madness.jpg);
+  background-size: cover;
+}
+
+.container-3 .card-1:nth-child(1)
+{
+  backdrop-filter: blur(10px);
+  background-image: url(Prompt\ With\ Wakanda.jpg);
+  background-size: cover;
+}
+
+.container-3 .card-1:nth-child(2)
+{
+  backdrop-filter: blur(10px);
+  background-image: url(Dead\ Fold.jpg);
+  background-size: cover;
+}
+
+.container-3 .card-1:nth-child(3)
+{
+  backdrop-filter: blur(10px);
+  background-image: url(Gen\ AI\ Forge.jpg);
+  background-size: cover;
+}
+
+@media (max-width:480px)
+{
+  .container-1{
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px;
   }
 
-  .card-1-btn strong {
-      font-size: 15px;
+  .container-2{
+    margin-top: -80px;
+    display:flex;
+    flex-direction: column;
   }
 
-  .card-1-glow {
-      width: 10rem;
+  .container-3{
+    margin-top: -80px;
+    display: flex;
+    flex-direction: column;
   }
 
-  .card-1-circle {
-      height: 20px;
+  .card-1{
+    margin-top: 40px;
   }
 }

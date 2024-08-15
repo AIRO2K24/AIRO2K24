@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gen AI Workshop</title>
+    <link rel="stylesheet" href="workshop.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Timmana&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="background-video">
+        <source src="Gen AI Forge.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Background Audio -->
+    <audio autoplay loop>
+        <source src="Gen AI Forge.mp3" type="audio/mp3">
+        Your browser does not support HTML5 audio.
+    </audio>
+
+    <div class="container">
+        <div class="left">
+            <img src="Gen AI Forge.jpg" alt="Event Image">
+        </div>
+        <div class="right">
+            <div class="heading-reg">
+            <h1>Gen AI Forge</h1>
+            <a href="https://docs.google.com/forms/d/104DT6BpAECzqQUF9qTqaClu5MOFG7O_6PXRCfAOPnTo/edit?usp=drivesdk">
+            <button id="register-button">Register Now</button>
+            </a>
+            </div>
+            <p id="description"><h2>"Discover the Power of Generative AI!" </h2><br>This workshop is designed to inspire creativity and innovation among 
+                participants by introducing them to the exciting world of Generative AI. 
+                Through hands-on activities and collaborative tasks, participants will 
+                explore the capabilities of AI in generating creative content. The workshop 
+                emphasizes learning, experimentation, and collaboration, allowing 
+                participants to discover new possibilities with AI tools.
+                </p>
+            <h2 class="section-title">Rules & Regulations</h2>
+                <ol id="guidelines">
+                    <li> Only individual participation is allowed.</li>
+                    <li> Computers and internet connection will be provided.</li>
+                    <li> Participants are required to give their full co-operation to the organizers for gaining good insights.</li>
+                    <li> The workshop organizers reserve the right to modify the rules and format if necessary.</li>
+                </ol>
+                
+            <p><strong>Venue:</strong> <span id="venue">AI-DS Lab - A block, First Floor</span></p>
+            <div>
+                <center>
+                    <h2>Event Co-ordinators</h2>
+                    <h2>Contact for Query</h2>
+                </center>
+            </div>
+            <div class="contact">
+                    <div>
+                        <img src="Yamini DKS.jpg" alt="" class="section"><h3>Yamini DKS</h3>
+                        <a href="https://www.linkedin.com/in/yamini-d-k-s-1b86b2255/" target="_blank">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
+                            </svg>
+                          </a>
+                        <p><a href="tel:+91 9080557366">+91 9080557366</a></p>
+                    </div>
+                    <div>
+                        <img src="Sanci Eunice.jpg" alt="" class="section"><h3>Sanci Eunice</h3>
+                        <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAD9A09UBV4XMXEikauV7bNgtZc6lwH50a2U&keywords=sanci%20eunice%20y%20l&origin=RICH_QUERY_SUGGESTION&position=0&searchId=9cd8d5c6-4906-4f4a-87b1-398dfbf83a79&sid=%2C_p&spellCorrectionEnabled=false" target="_blank">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
+                            </svg>
+                          </a>
+                        <p><a href="tel:+91 6381496871">+91 6381496871</a></p>
+                    </div>
+            </div>
+            <div class="contact-1">
+                <div>
+                    <img src="Ashok A.jpg" alt="" class="section"><h3>Ashok Aathreyan U</h3>
+                    <a href="https://www.linkedin.com/in/ashok-aathreyan-u-623b6b2b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
+                        </svg>
+                      </a>
+                    <p><a href="tel:+91 9884982982">+91 9884982982</a></p>
+                </div>
+                <div>
+                    <img src="Reshmi.jpg" alt="" class="section"><h3>Reshmi Subha GKR</h3>
+                    <a href="https://www.linkedin.com/in/reshmi-subha-97436a292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
+                        </svg>
+                      </a>
+                    <p><a href="tel:+91 9003044346">+91 9003044346</a></p>
+                </div>
+            </div>    
+        </div>
+    </div>
+</body>
+</html>

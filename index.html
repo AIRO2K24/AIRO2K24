@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIRO 4.0</title>
+    <link rel="icon" href="Logo.png">
     <link rel="stylesheet" href="chaipersons.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="appbar.css">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="sairam.css">
     <link rel="stylesheet" href="style-prize.css">
     <link rel="stylesheet" href="events.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <!-- For Description -->
@@ -26,49 +28,57 @@
     <!-- For Cards -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Solway:wght@300;400;500;700;800&family=Timmana&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Manrope:wght@200..800&family=Solway:wght@700&family=Timmana&display=swap" rel="stylesheet"></head>
 <body>
   <header>
-    <div class="container">
-      <div class="navbar">
-        <a href="#" class="logo">AIRO 4.0</a>
-        <nav id="navLinks">
-          <ul>
-            <button class="btn">Home</button>
-            <button class="btn">About</button>
-            <button class="btn">Schedules</button> 
-            <button class="btn register">
-              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="currentColor"></path>
-              </svg>
-              <span>Register</span>
-            </button>
-          </ul>
-        </nav>
+    <nav class="navbar">
+      <div class="logo">
+          <a href="#">
+              <img src="Logo.png" alt="Logo">
+          </a>
       </div>
-    </div>
+      <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#About-Us">About</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#FAQ">FAQ</a></li>
+          <li><a href="#Contact-Us">Contact Us</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+  </nav>
   </header>
-        <div class="airo-main">
-            <svg class = "svgs" viewBox="0 0 960 300">
-                <symbol id="s-text">
-                  <text text-anchor="middle" x="50%" y="80%">AIRO 4.0</text>
-                  <text text-anchor="middle" x="52%" y="80%">AIRO 4.0</text>
-                  
-                </symbol>
-              
-                <g class = "g-ants">
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                </g>
-              </svg>
-        </div>
+  <!-- <video loop autoplay muted id="background-video">
+    <source src="Marvel Opening Theme.mp4" type="video/mp4">
+    "Your Browser Doesn't Support Video"
+  </video> -->
+  <div id="particles-js"></div>
+  <audio autoplay loop>
+    <source src="Theme Song.mp3">
+    "Your Browser Doesn't Support Audio"
+  </audio>
+  <div class="airo-main" id="home">
+    <svg class = "svgs" viewBox="0 0 960 300">
+        <symbol id="s-text">
+          <text text-anchor="middle" x="50%" y="80%">A I Я O    4.0</text>
+          <text text-anchor="middle" x="52%" y="80%">A I Я O    4.0</text>
+          
+        </symbol>
+      
+        <g class = "g-ants">
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+      </svg>
+</div>
         <section>
-            <h2>EVENT WILL START IN</h2>
+            <h2 class="event-h2">EVENT WILL COMMENCE IN</h2>
             <div class="countdown-timer">
                 <div class="time-box">
                     <span id="days">0</span>
@@ -94,100 +104,160 @@
                 </div>
                 <div class="department-content">
                     <div class="department-description">
-                        <h3>About the Department of AI-DS</h3>
+                        <h3>About the Department of AI&DS</h3>
                         <p>
-                            The Department of Artificial Intelligence and Data Science at Sri Sairam Engineering College is a vibrant hub of innovation and learning, dedicated to advancing the frontiers of AI and data science. Our curriculum is meticulously designed to equip overalls with a robust foundation in AI principles, data analysis, machine learning, and related technologies. We emphasize hands-on learning, encouraging overalls to engage in real-world projects and research initiatives that address contemporary challenges. Our faculty comprises experienced professionals and academics who bring a wealth of knowledge and industry insights to the classroom. With state-of-the-art laboratories, a strong focus on interdisciplinary collaboration, and a commitment to fostering creativity and critical thinking, our department aims to produce skilled graduates who are prepared to lead in the ever-evolving landscape of AI and data science.
+                          The Department of Artificial Intelligence and Data Science at Sri Sairam Engineering College is a vibrant hub of innovation and learning, dedicated to advancing the frontiers of AI and data science. Our curriculum is meticulously designed to equip students with a robust foundation in AI principles, data analysis, machine learning, and related technologies. We emphasize hands-on learning, encouraging students to engage in real-world projects and research initiatives that address contemporary challenges. Our faculty comprises experienced professionals and academics who bring a wealth of knowledge and industry insights to the classroom. With state-of-the-art laboratories, a strong focus on interdisciplinary collaboration, and a commitment to fostering creativity and critical thinking, our department aims to produce skilled graduates who are prepared to lead in the ever-evolving landscape of AI and data science.
                         </p>
                     </div>
                 </div>
             </section>
             <div class="industry">
-              <h1 id="hackerText">Technical event</h1>
+              <h1 id="hackerText1">Technical Events</h1>
             </div>
-
-            <section>
+            <section id="events">
               <div class="container-1">
                 <div class="card-1">
-                  <h2>Code And Bid</h2>
-                  <button class="card-1-btn" type="button">
-                    <strong>Register Now</strong>
-                    <div class="card-1-container-stars">
-                      <div class="card-1-stars"></div>
-                    </div>
-                    <div class="card-1-glow">
-                      <div class="card-1-circle"></div>
-                      <div class="card-1-circle"></div>
-                    </div>
-                  </button>
+                  <div>
+                    <h2>Coders Assemble</h2>
+                  </div>
+                  <div class="card-content">
+                    <a href="coderassemble.html" class="btn-1">
+                      <strong>Register Now</strong>
+                      <div id="container-stars">
+                        <div id="stars"></div>
+                      </div>
+                      <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                    </a>
+                  </div>  
+                </div>
+                 
+                <div class="card-1">
+                  <div>
+                    <h2>Asgardian Auction House</h2>
+                  </div>
+                  <div class="card-content">
+                    <a href="auction.html" class="btn-1">
+                      <strong>Register Now</strong>
+                      <div id="container-stars">
+                        <div id="stars"></div>
+                      </div>
+                      <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                    </a>
+                  </div>                  
                 </div>
                 <div class="card-1">
-                  <h2>Connect With Prompt</h2>
-                  <button class="card-1-btn" type="button">
-                    <strong>Register Now</strong>
-                    <div class="card-1-container-stars">
-                      <div class="card-1-stars"></div>
-                    </div>
-                    <div class="card-1-glow">
-                      <div class="card-1-circle"></div>
-                      <div class="card-1-circle"></div>
-                    </div>
-                  </button>
-                </div>
-                <div class="card-1">
-                  <h2>Rapid AI</h2>
-                  <button class="card-1-btn" type="button">
-                    <strong>Register Now</strong>
-                    <div class="card-1-container-stars">
-                      <div class="card-1-stars"></div>
-                    </div>
-                    <div class="card-1-glow">
-                      <div class="card-1-circle"></div>
-                      <div class="card-1-circle"></div>
-                    </div>
-                  </button>
-                </div>
+                  <div>
+                    <h2>SpiderTech Web</h2>
+                  </div>
+                  <div class="card-content">
+                    <a href="rapidai.html" class="btn-1">
+                      <strong>Register Now</strong>
+                      <div id="container-stars">
+                        <div id="stars"></div>
+                      </div>
+                      <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                    </a>
+                  </div>  
+                </div>                
               </div>
-              <div class="container-2">
+              <div class="container-2">    
                 <div class="card-1">
-                  <h2>Reel VS Real</h2>
-                  <button class="card-1-btn" type="button">
-                    <strong>Register Now</strong>
-                    <div class="card-1-container-stars">
-                      <div class="card-1-stars"></div>
-                    </div>
-                    <div class="card-1-glow">
-                      <div class="card-1-circle"></div>
-                      <div class="card-1-circle"></div>
-                    </div>
-                  </button>
+                  <div>
+                    <h2>Infinity Models</h2>
+                  </div>
+                  <div class="card-content">
+                    <a href="infinitymodel.html" class="btn-1">
+                      <strong>Register Now</strong>
+                      <div id="container-stars">
+                        <div id="stars"></div>
+                      </div>
+                      <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                    </a>
+                  </div>  
                 </div>
+                
                 <div class="card-1">
-                  <h2>Technical Auction</h2>
-                  <button class="card-1-btn" type="button">
-                    <strong>Register Now</strong>
-                    <div class="card-1-container-stars">
-                      <div class="card-1-stars"></div>
-                    </div>
-                    <div class="card-1-glow">
-                      <div class="card-1-circle"></div>
-                      <div class="card-1-circle"></div>
-                    </div>
-                  </button>
-                </div>
-                <div class="card-1">
-                  <h2>Blind Fold</h2>
-                  <button class="card-1-btn" type="button">
-                    <strong>Register Now</strong>
-                    <div class="card-1-container-stars">
-                      <div class="card-1-stars"></div>
-                    </div>
-                    <div class="card-1-glow">
-                      <div class="card-1-circle"></div>
-                      <div class="card-1-circle"></div>
-                    </div>
-                  </button>
-                </div>
+                  <div>
+                    <h2>Multiverse Of Madness</h2>
+                  </div>
+                  <div class="card-content">
+                    <a href="multiverse.html" class="btn-1">
+                      <strong>Register Now</strong>
+                      <div id="container-stars">
+                        <div id="stars"></div>
+                      </div>
+                      <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                    </a>
+                  </div>  
+                </div>                
               </div>
+              <div class="container-3">
+                <div class="card-1">
+                  <div>
+                    <h2>Prompt With Wakanda</h2>
+                  </div>
+                  <div class="card-content">
+                    <a href="connectwithpro.html" class="btn-1">
+                      <strong>Register Now</strong>
+                      <div id="container-stars">
+                        <div id="stars"></div>
+                      </div>
+                      <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                    </a>
+                  </div>  
+                </div>
+                <div class="card-1">
+                  <div>
+                    <h2>Dead Fold</h2>
+                  </div>
+                  <div class="card-content">
+                    <a href="deadfold.html" class="btn-1">
+                      <strong>Register Now</strong>
+                      <div id="container-stars">
+                        <div id="stars"></div>
+                      </div>
+                      <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                    </a>
+                  </div>  
+                </div>
+                <div class="card-1">
+                  <div>
+                    <h2>Gen AI Forge</h2>
+                  </div>
+                  <div class="card-content">
+                    <a href="workshop.html" class="btn-1">
+                      <strong>Register Now</strong>
+                      <div id="container-stars">
+                        <div id="stars"></div>
+                      </div>
+                      <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>d
+                    </a>
+                  </div>  
+                </div>
               </div>
             </section>                                
     <section class="schedules">
@@ -272,15 +342,19 @@
           </div>  
           <div class="chair-card">
             <div class="chair-card-info">
-              <div class="chair-card-avatar"></div>
+              <div class="chair-card-avatar">
+                <img src="1591960457895.jpeg">
+              </div>
               <div class="chair-card-title">Dr. Swagata Sarkar</div>
               <div class="chair-card-subtitle">HOD</div>
             </div>
             <ul class="chair-card-social">
               <li class="chair-card-social__item">
+                <a href="https://www.linkedin.com/in/swagatabsarkar/" target="_blank">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
                 </svg>
+              </a>
               </li>
             </ul>
           </div>
@@ -289,7 +363,9 @@
     <div class="staffcoordinator">
         <div class="chair-card">
             <div class="chair-card-info">
-              <div class="chair-card-avatar"></div>
+              <div class="chair-card-avatar">
+                <img src="Preethi Ma'am.jpg">
+              </div>
               <div class="chair-card-title">Mrs. S. Preethi</div>
               <div class="chair-card-subtitle">AI-DS</div>
             </div>
@@ -310,7 +386,7 @@
             <img src="Pradeep.jpg">
           </div>
           <div class="chair-card-title">Pradeep S</div>
-          <div class="chair-card-subtitle">Overall Co-Ordinators</div>
+          <div class="chair-card-subtitle">Chairperson</div>
         </div>
         <ul class="chair-card-social">
           <li class="chair-card-social__item">
@@ -328,7 +404,7 @@
             <img src="Tharushi.jpg">
           </div>
           <div class="chair-card-title">Tharushi S S</div>
-          <div class="chair-card-subtitle">Overall Co-Ordinators</div>
+          <div class="chair-card-subtitle">Vice Chairperson</div>
         </div>
         <ul class="chair-card-social">
           <li class="chair-card-social__item">
@@ -341,13 +417,15 @@
         </ul>
       </div>
     </div>
-    <h2 class="studentCoordinators">Student CO-Ordinators</h2>
+    <h2 class="studentCoordinators">Secretaries</h2>
     <div class="studentcoordinators">
       <div class="chair-card">
         <div class="chair-card-info">
-          <div class="chair-card-avatar"></div>
-          <div class="chair-card-title">Steve Jobs</div>
-          <div class="chair-card-subtitle">CEO &amp; Co-Founder</div>
+          <div class="chair-card-avatar">
+          <img src = "Surya.png">
+        </div>
+          <div class="chair-card-title">Surya Prakash S</div>
+          <div class="chair-card-subtitle">Secretary</div>
         </div>
         <ul class="chair-card-social">
           <li class="chair-card-social__item">
@@ -362,8 +440,8 @@
           <div class="chair-card-avatar">
             <img src="Egadharshan.jpg">
           </div>
-          <div class="chair-card-title">Egadharshan</div>
-          <div class="chair-card-subtitle">CEO &amp; Co-Founder</div>
+          <div class="chair-card-title">Egadarshan S</div>
+          <div class="chair-card-subtitle">Secretary</div>
         </div>
         <ul class="chair-card-social">
           <li class="chair-card-social__item">
@@ -376,18 +454,20 @@
         </ul>
       </div>
     </div>
+
+    <h2 class="studentCoordinators">Treasurers</h2>
     <div class="studentcoordinators-2">
       <div class="chair-card">
         <div class="chair-card-info">
           <div class="chair-card-avatar">
-            <img src="Harini R.jpg">
+            <img src="hari.jpg">
           </div>
-          <div class="chair-card-title">Harini R</div>
-          <div class="chair-card-subtitle">Class Co-Ordinator</div>
+          <div class="chair-card-title">Hariprashaad S R</div>
+          <div class="chair-card-subtitle">Treasurer</div>
         </div>
         <ul class="chair-card-social">
           <li class="chair-card-social__item">
-            <a href="https://www.linkedin.com/in/harini-renganathan-681655258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            <a href="https://www.linkedin.com/in/hariprashaadsr-off/" target="_blank">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
               </svg>
@@ -398,14 +478,14 @@
       <div class="chair-card">
         <div class="chair-card-info">
           <div class="chair-card-avatar">
-            <img src="Surya.jpg">
+            <img src="Harini R.jpg">
           </div>
-          <div class="chair-card-title">Surya Prakash</div>
-          <div class="chair-card-subtitle">Class Co-Ordinator</div>
+          <div class="chair-card-title">Harini R</div>
+          <div class="chair-card-subtitle">Treasurer</div>
         </div>
         <ul class="chair-card-social">
           <li class="chair-card-social__item">
-            <a href="https://www.linkedin.com/in/surya-prakash-b0399a243" target="_blank">
+            <a href="https://www.linkedin.com/in/harini-renganathan-681655258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
               </svg>
@@ -418,15 +498,19 @@
     <div class="webdevelopers">
       <div class="chair-card">
         <div class="chair-card-info">
-          <div class="chair-card-avatar"></div>
+          <div class="chair-card-avatar">
+            <img src="Chellappan R.JPG">
+          </div>
           <div class="chair-card-title">Chellappan R</div>
           <div class="chair-card-subtitle">Web Developer</div>
         </div>
         <ul class="chair-card-social">
-          <li class="chair-card-social__item">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
-            </svg>
+          <li class="chair-card-social__item">  
+            <a href="https://www.linkedin.com/in/chellappan-ramachandran-ba85a1257/">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -471,20 +555,27 @@
       </div>
       <div class="chair-card">
         <div class="chair-card-info">
-          <div class="chair-card-avatar"></div>
-          <div class="chair-card-title">Hemanth</div>
-          <div class="chair-card-subtitle">CEO &amp; Co-Founder</div>
+          <div class="chair-card-avatar">
+            <img src="Hemanathan.jpg">
+          </div>
+          <div class="chair-card-title">Hemanathan</div>
+          <div class="chair-card-subtitle">Media Team</div>
         </div>
         <ul class="chair-card-social">
           <li class="chair-card-social__item">
+            <a href="https://www.linkedin.com/in/r-hemanathan-a5a504257" target="_blank">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
             </svg>
+            </a>
           </li>
         </ul>
       </div>
     </div>
+    <h1 id="hackerText">Prizes Worth ₹30K+ </h1>
     <section class="prize-pool">
+      
+     
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="500px" height="800px" viewBox="0 0 500 800">
             <defs>
                 <radialGradient id="Gradient_1" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="211.4" fx="0" fy="0" gradientTransform="matrix( 1, 0, 0, 1, 0,0) " spreadMethod="pad">
@@ -861,7 +952,7 @@
                 </g>
             </g>
         </svg>
-        <h1 id="hackerText">Prizes Worth ₹30,000</h1>
+        
         </div>
     </section>
     <section class="faq-container" id="FAQ">
@@ -899,34 +990,43 @@
         <details>
             <summary>What about food and travel accomodation?</summary>
             <div class="faq-content">
-                Food will be provided and for more information about travel, Please refer to the below link.<br>
-                <a href="">Sairam Bus Transport Routes</a> 
+                Food will be provided and for more information about travel, Please refer to the below PDF<br>
+                <a href="Bus Boarding Point.pdf" download>Sairam Bus Transport Routes</a> 
             </div>
         </details>
     </section>
     </main>
     <footer id="Contact-Us">
         <div class="footer-container">
-            <div class="footer-section about">
-                <h2 class="logo-text"><span>AIRO 4.0</span></h2>
+            <div class="footer-section-about">
+                <img src="Logo.png">
                 <p class="quote">"Innovating Tomorrow, Today".</p>
             </div>
             <div class="footer-section links">
                 <h2>Quick Links</h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Schedule</a></li>
-                    <li><a href="#">Prize</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#About-us">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#FAQ">FAQ</a></li>
                 </ul>
             </div>
             <div class="footer-section contact">
-                <h2>For more queries, Contact our AIRO 4.0 Overall Co-ordinators</h2>
-                <p>Pradeep S</p>
-                <p>Phone: +123 456 7890</p>
-                <p>Tharushi S S</p>
-                <p>Phone: </p>
+                <h2>For more queries</h2>
+                <p style = 'margin-bottom : 0px;'>Pradeep S</p>
+                <div class="phone-no">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16" style = "width: 15px;height :15px; margin: 0 5px 0 0">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg>
+                <p> <a href="tel:+91 8838909289">+91 8838909289</a></p>
+              </div>
+                <p style = 'margin-bottom : 0px;'>Tharushi S S</p>
+                <div class="phone-no">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16" style = "width: 15px;height :15px; margin: 0 5px 0 0">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg>
+                <p><a href="tel:+91 7358638595">+91 7358638595</a></p>
+              </div>
             </div>
             <div class="footer-section socials">
                 <h2>Follow Us On</h2>

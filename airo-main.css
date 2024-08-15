@@ -1,75 +1,68 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
-.airo-main{
+.airo-main {
   margin-top: 5%;
-  /* margin-bottom:25%; */
-  }
+}
+
 .svgs {
-    display: block;
-    font: 10.5em 'Montserrat';
-    width: 960px;
-    height: 300px;
-    margin: 0 auto;
+  display: block;
+  font: 10.5em 'Montserrat';
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
 }
 
 svg {
   display: block;
-  top:16px;
+  top: 16px;
   font: 10.5em 'Montserrat';
-  width: 960px;
+  width: 90%;
   height: 300px;
   margin: 0 auto;
 }
+
 .text-copy {
-    fill: none;
-    stroke: white;
-    stroke-dasharray: 6% 29%;
-    stroke-width: 5px;
-    stroke-dashoffset: 0%;
-    animation: stroke-offset 5.5s infinite linear;
+  fill: none;
+  stroke: hsl(296, 59%, 10%);
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 6s infinite linear;
+  text-shadow: 0 0 8px #66e0ff, 0 0 16px #66e0ff, 0 0 24px #e366ff, 0 0 32px #e366ff;
 }
 
-.text-copy:nth-child(1){
-  stroke: #4D163D;
-  animation-delay: -1;
+.text-copy:nth-child(1) {
+  stroke: hsl(296, 59%, 10%);
+  animation-delay: -1s;
+  text-shadow: 0 0 8px hsl(296, 59%, 10%), 0 0 16px hsl(296, 59%, 10%), 0 0 24px #e366ff, 0 0 32px #e366ff;
 }
 
-.text-copy:nth-child(2){
-  stroke: #840037;
+.text-copy:nth-child(2) {
+  stroke: hsl(296, 59%, 10%);
   animation-delay: -2s;
+  text-shadow: 0 0 8px hsl(296, 59%, 10%), 0 0 16px hsl(296, 59%, 10%), 0 0 24px #e366ff, 0 0 32px #e366ff;
 }
 
-.text-copy:nth-child(3){
-  stroke: #BD0034;
+.text-copy:nth-child(3) {
+  stroke: #66e0ff;
   animation-delay: -3s;
+  text-shadow: 0 0 8px #66e0ff, 0 0 16px #66e0ff, 0 0 24px #e366ff, 0 0 32px #e366ff;
 }
 
-.text-copy:nth-child(4){
-  stroke: #BD0034;
+.text-copy:nth-child(4) {
+  stroke: #e366ff;
   animation-delay: -4s;
+  text-shadow: 0 0 8px #e366ff, 0 0 16px #e366ff, 0 0 24px #66e0ff, 0 0 32px #66e0ff;
 }
 
-.text-copy:nth-child(5){
-  stroke: #FDB731;
+.text-copy:nth-child(5) {
+  stroke: #66e0ff;
   animation-delay: -5s;
+  text-shadow: 0 0 8px #66e0ff, 0 0 16px #66e0ff, 0 0 24px #e366ff, 0 0 32px #e366ff;
 }
 
-@keyframes stroke-offset{
-  100% {stroke-dashoffset: -35%;}
-}
-
-  @media (max-width: 480px) {
-    .airo-main {
-      margin-top: 150px;
-      margin-bottom: 15%;
-    }
-
-    .svgs, svg {
-      width: 100%;
-      height: auto;
-    }
-
-    .text-copy {
-      stroke-width: 3px;
-    }
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
   }
+}

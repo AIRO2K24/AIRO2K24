@@ -129,7 +129,7 @@ var Countdown = {
 // Let's go !
 Countdown.init();
 
-const textElement = document.getElementById("hackerText");
+const textElement = document.getElementById("hackerText1");
 const originalText = textElement.innerHTML;
 
 function scrambleText() {

@@ -1,0 +1,93 @@
+body {
+    background-color: #151515;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: #ED1D24;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* From Uiverse.io by nikk7007 */ 
+button {
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 105%;
+   }
+   
+   button:hover {
+    color: #111;
+   }
+   
+
+p {
+    font-size: 1.2em;
+    color: #C0C0C0;
+}
+
+.container {
+    padding: 50px;
+}
+
+.highlight {
+    color: #00BCD4;
+    font-weight: bold;
+}
+
+.button {
+    margin-top: 30px;
+}
+
+.button a {
+    text-decoration: none;
+    background-color: #ED1D24;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.button a:hover {
+    background-color: #D4171E;
+}

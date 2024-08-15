@@ -62,25 +62,23 @@ h1 strong {
   color: #ea4c4c;
 }
 
-.card-1 h2 {
-  margin-bottom: 80px;  
-  text-align: center;  
-  font: 300 0.7em 'Lato'; 
-  text-transform: uppercase;  
-}
-
 h2 strong {    
   font-weight: 400;   
 }
 
 @media (max-width: 480px) {
+
+  .event-h2{
+    margin-top: -20px;
+  }
+
   .countdown h2 {
     font-size: 24px;
     margin-bottom: 15px;
   }
 
   .countdown-timer {
-    margin-top: -80px;
+    margin-top: -20px;
     flex-direction: row;
     justify-content: space-evenly;
   }

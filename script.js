@@ -18,7 +18,7 @@ const hoursElement = document.getElementById("hours");
 const minutesElement = document.getElementById("minutes");
 const secondsElement = document.getElementById("seconds");
 
-const futureDate = new Date("2024-08-30T10:00:00");
+const futureDate = new Date("2024-08-30T09:00:00");
 
 const getTimeRemaining = () => {
   const today = new Date();
@@ -42,3 +42,11 @@ const getTimeRemaining = () => {
 
 getTimeRemaining();
 setInterval(getTimeRemaining, 1000);
+
+const mobileMenu = document.getElementById("mobile-menu");
+const navLinks = document.querySelector(".nav-links");
+
+mobileMenu.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  mobileMenu.classList.toggle("open");
+});

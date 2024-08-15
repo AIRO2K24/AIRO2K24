@@ -757,20 +757,20 @@
   }
 
   #prizeText{
-      text-shadow: 0 0 5px #7e2469, 0 0 10px #7e2469, 0 0 20px #7e2469, 0 0 40px #7e2469;
+      text-shadow: 0 0 5px #2316d2, 0 0 10px #f7f7f7, 0 0 20px #4d48de, 0 0 40px #84a3eb;
       animation: flicker 1.5s infinite alternate;
     }
     @keyframes flicker {
       0% {
         opacity: 1;
-        text-shadow: 0 0 5px #7e2469, 0 0 10px #7e2469, 0 0 20px #7e2469, 0 0 40px #7e2469;
+        text-shadow: 0 0 5px #45da18, 0 0 10px #93ebb3, 0 0 20px #3ce441, 0 0 40px #226dc9;
       }
       50% {
         opacity: 0.5;
-        text-shadow: 0 0 10px #7e2469, 0 0 20px #7e2469, 0 0 30px #7e2469, 0 0 50px #7e2469;
+        text-shadow: 0 0 10px #6b8fe2, 0 0 20px #3e3b3d, 0 0 30px #5e47cf, 0 0 50px #72f442;
       }
       100% {
         opacity: 1;
-        text-shadow: 0 0 5px #7e2469, 0 0 10px #7e2469, 0 0 20px #7e2469, 0 0 40px #7e2469;
+        text-shadow: 0 0 5px #2316d2, 0 0 10px #f7f7f7, 0 0 20px #4d48de, 0 0 40px #84a3eb;
       }
     }

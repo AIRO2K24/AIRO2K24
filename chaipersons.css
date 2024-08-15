@@ -116,6 +116,19 @@
   background: #f5f5f5;
   padding: 2rem 1.5rem;
   transition: box-shadow .3s ease, transform .2s ease;
+  border-radius: 20px;
+}
+
+.chairpersons .chair-card:nth-child(1):hover .chair-card-social, .chairpersons .chair-card:nth-child(3):hover .chair-card-social
+{
+  transform: translateY(10px);
+  opacity: 1;
+}
+
+.mediateam .chair-card:nth-child(1):hover .chair-card-social
+{
+  transform: translateY(10px);
+  opacity: 1;
 }
 
 .chair-card-info {
@@ -203,7 +216,7 @@
 
 @media (max-width: 480px) {
   .chair-card-avatar img{
-    --size: 100px;
+    --size: 130px;
     background: linear-gradient(to top, #f1e1c1 0%, #fcbc97 100%);
     width: var(--size);
     height: var(--size);
@@ -255,8 +268,8 @@
   }
 
   .chair-card {
-      height: 180px;
-      width: 180px;
+      height: 190px;
+      width: 190px;
       margin-top: 30px;
   }
   
@@ -265,9 +278,11 @@
   }
   
   .chair-card-avatar {
+    display: flex;
+    flex-direction: row;
       margin-top: -20px;
-      width: 100px;
-      height: 100px;
+      width: 130px;
+      height: 130px;
   }
   
   .chair-card-title {
@@ -284,6 +299,12 @@
   }
   
   .chair-card-social__item {
-      margin: 4px 0;
+      margin: -2px 0;
+  }
+
+  .chairpersons .chair-card:nth-child(3):hover .chair-card-social
+  {
+    transform: translateY(100%);
+    opacity: 1;
   }
 }

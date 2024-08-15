@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asgardian Auction House</title>
+    <link rel="icon" href="Thor Logo.png">
+    <link rel="stylesheet" href="auction.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Timmana&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted id="background-video">
+        <source src="Asgard.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Background Audio -->
+    <audio autoplay id="background-audio">
+        <source src="Asgard.mp3" type="audio/mp3">
+        Your browser does not support HTML5 audio.
+    </audio>
+
+    <div class="container">
+        <div class="left">
+            <img src="Asgardian Auction House.jpg" alt="Event Image">
+        </div>
+        <div class="right">
+            <div class="heading-reg">
+                <h1>Asgardian Auction House</h1>
+                <button id="register-button" onclick="window.location.href='auctionform.html'">Register Now</button>
+            </div>
+            <p id="description"><h2>"Bid Like a Hero, Build Like a Legend!"</h2><br>Welcome to the Asgardian Auction House—where the wisdom of Odin meets the thrill of the
+                Avengers! Inspired by the legendary IPL auctions, this Marvel-themed event invites you to step into
+                the shoes of corporate strategists. Assemble your dream team by bidding on top talent from realms
+                near and far, including roles like Marketing Manager, AI Engineer, and more.
+                Each candidate will be displayed in a dynamic card format, highlighting their role, experience, and
+                base price. With a fixed amount of funds at your disposal, your team must make shrewd decisions to
+                acquire the essential roles needed to build a well-rounded, powerhouse company. The team that
+                crafts the most formidable and efficient organization will emerge victorious. Will your team have the
+                strategic prowess to outbid the competition and forge an unbeatable corporate force?</p>
+            <h2>Rounds Overview</h2>
+            <ol id="guidelines">
+                <li>
+                    <strong>Round 1: Online Quiz</strong>
+                    <p><strong>Description:</strong> The event kicks off with an online quiz designed to test your knowledge of technologies and the corporate world. This round will challenge teams to demonstrate their expertise and strategic thinking. Only the top ten teams from this round will advance to the next stage.</p>
+                </li>
+                <li>
+                    <strong>Round 2: The Auction</strong>
+                    <p><strong>Description:</strong> The top ten teams will gather on our college campus for the final showdown. In this round, teams will participate in a live auction, bidding on various candidates to build their ultimate company. The decisions made here will determine the event's champions.</p>
+                </li>
+            </ol>
+        
+            <h2 class="section-title">Rules & Regulations</h2>
+            <ol id="guidelines">
+                <li>Each team must consist of 3-4 members.</li>
+                <li>Each team will be allocated a set amount of rupees to bid on candidates. No additional funds will be provided, so plan your strategy carefully.</li>
+                <li>Candidates will be presented in a card format, displaying their role, experience, and base price. These cards will be revealed 1-2 days before the event to give teams ample time to strategize.</li>
+                <li>Bidding will take place in a live auction format. Each team must secure the minimum number of roles required to form a cohesive company.</li>
+                <li>The winning team will be the one that:
+                    <ul style="margin-left: 20px;">
+                        <li>    Acquires the minimum number of required roles.</li>
+                        <li>    Amasses the highest total credits from their selected candidates.</li>
+                        <li>    Constructs a well-structured company with a balanced and diverse set of roles.</li>
+                    </ul>
+                </li>
+                <li>Teams must ensure a balanced distribution of roles within their company. Overlapping roles or missing essential roles will negatively impact the evaluation.</li>
+                <li>Teams must manage their allocated amount wisely. Exceeding the purse limit will lead to immediate disqualification.</li>
+                <li>Teams should consider both the individual base price and the overall synergy of their company structure while bidding. A well-rounded team with complementary roles will outperform a team with high individual prices but poor cohesion.</li>
+            </ol>
+        
+            <p>Prepare for an epic battle of strategy and wit at the Asgardian Auction House, where only the most visionary team will claim victory!</p>
+        
+            <p><strong>Venue:</strong> <span id="venue">Classroom (Room no. - E5107) - E block, Fourth Floor</span></p>
+            <div>
+                <center>
+                    <h2>Event Co-ordinators</h2>
+                    <h2>Contact for Query</h2>
+                </center>
+            </div>
+            <div class="contact">
+                <div>
+                    <img src="Deva Praveen.jpg" alt="" class="section"><h3>Deva Praveen K</h3>
+                    <a href="https://www.linkedin.com/in/devapraveenk/" target="_blank">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
+                        </svg>
+                      </a>
+                    <p><a href="tel:+91 9080935242">+91 9080935242</a></p>
+                </div>
+                <div>
+                    <img src="Nishanth J.jpg" alt="" class="section"><h3>Nishanth J</h3>
+                    <a href="https://www.linkedin.com/in/nishanth-j-a85717257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
+                        </svg>
+                      </a>
+                    <p><a href="tel:+91 7397547535">+91 7397547535</a></p>
+                </div>
+                <div>
+                    <img src="harini KV.jpg" alt="" class="section"><h3>Harini KV</h3>
+                    <a href="https://www.linkedin.com/in/harini-k-v-198606258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
+                        </svg>
+                      </a>
+                
+                    <p><a href="tel:+91 8122024673">+91 8122024673</a></p>
+                </div>
+            </div>
+            <div class="contact-1">
+                <div>
+                    <img src="Sudharshan.jpg" alt="" class="section"><h3>Sudharshan B</h3>
+                    <a href="https://www.linkedin.com/in/sudharshan-b-1227bb280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
+                        </svg>
+                      </a>
+                    <p><a href="tel:+91 9080935242">+91 9080935242</a></p>
+                </div>
+                <div>
+                    <img src="Elgin.jpg" alt="" class="section">
+                    <h3>Elgin Dani E</h3>
+                    <a href="https://www.linkedin.com/in/elgin-dani-11a52027b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
+                        </svg>
+                      </a>
+                    <p><a href="tel:+91 9025391361">+91 9025391361</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
