@@ -9,8 +9,5 @@ form.addEventListener("submit", (e) => {
     .then((response) =>
       window.location.href ='thank3.html'
     )
-    .then(() => {
-      window.location.reload();
-    })
     .catch((error) => console.error("Error!", error.message));
 });
