@@ -18,7 +18,7 @@ const hoursElement = document.getElementById("hours");
 const minutesElement = document.getElementById("minutes");
 const secondsElement = document.getElementById("seconds");
 
-const futureDate = new Date("2024-08-30T09:00:00");
+const futureDate = new Date("2024-09-13T09:00:00");
 
 const getTimeRemaining = () => {
   const today = new Date();
